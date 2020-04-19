@@ -1,50 +1,57 @@
 <template>
-    <div class="companies">
-        <div class="left-navbar">
-            <h3> Companies </h3>
-            <div class="company-name" v-for="company in companies" :key="company">
-                {{company}}
-            </div>
-        </div>
-        <div class="company-view">
-            <h1> Amazon </h1>
-            <table>
-                <tr>
-                    <th>Position</th>
-                    <th>Salary</th>
-                    <th>Location</th>
-                    <th>Major</th>
-                    <th>Experience</th>
-                    <th>Co-op Found</th>
-                    <th>Citizenship</th>
-                    <th>Extra notes</th>
-                    <th>Co-op Date</th>
-                </tr>
-                <tr>
-                    <td>Jill</td>
-                    <td>Smith</td>
-                    <td>50</td>
-                    <td>Jill</td>
-                    <td>Smith</td>
-                    <td>50</td>
-                    <td>Jill</td>
-                    <td>Smith</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td>Eve</td>
-                    <td>Jackson</td>
-                    <td>94</td>
-                    <td>Eve</td>
-                    <td>Jackson</td>
-                    <td>94</td>
-                    <td>Eve</td>
-                    <td>Jackson</td>
-                    <td>94</td>
-                </tr>
-                </table>
-        </div>
-    </div>
+	<div class="companies">
+		<div class="left-navbar">
+			<h3> Companies </h3>
+			<div class="company-name" v-for="company in companies" :key="company">
+					{{company}}
+			</div>
+		</div>
+		<div class="company-view">
+			<div class="content">
+				<div class="content-image">
+					<img src="https://logo.clearbit.com/amazon.com" />  
+				</div>
+				<div class="content-description">
+					<h1> Amazon </h1>
+				</div>
+			</div>
+			<table>
+					<tr>
+							<th>Position</th>
+							<th>Salary/Hour</th>
+							<th>Location</th>
+							<th>Major</th>
+							<th>Experience</th>
+							<th>Co-op Found</th>
+							<th>Citizenship</th>
+							<th>Stipend</th>
+							<th>Co-op Date</th>
+					</tr>
+					<tr>
+							<td>Software Engineer Development</td>
+							<td>50</td>
+							<td>Seattle, WA</td>
+							<td>Computer Science</td>
+							<td>3rd co-op</td>
+							<td>Outside</td>
+							<td>International</td>
+							<td>9,000 housing</td>
+							<td>2020</td>
+					</tr>
+					<tr>
+							<td>Software Engineer Development</td>
+							<td>50</td>
+							<td>Seattle, WA</td>
+							<td>Computer Science</td>
+							<td>3rd co-op</td>
+							<td>Outside</td>
+							<td>International</td>
+							<td>9,000 housing</td>
+							<td>2020</td>
+					</tr>
+				</table>
+		</div>
+	</div>
 </template>
 
 <script>
@@ -108,14 +115,45 @@ p{
     margin-top: 0px; 
 }
 
-
-
 table{
+		border: 1px rgba(0,0,0,0.1) solid;
     text-align: left;
-    border: 1px rgba(0,0,0,0.1) solid;
     width: 100%; 
-    padding: 0.5em; 
     color: black; 
+    font-size: 14px; 
+}
+
+th, td{
+	padding: 0.5em;  
+}
+
+td{
+	border-top: 1px rgba(0,0,0,0.1) solid;
+}
+
+
+.content {
+    width: 100%; 
+    overflow: hidden;
+		height: 50px;
+		display: flex;
+		margin-bottom: 20px;
+}
+
+.content-image{
+	height: 100%; 
+	width: 50px;
+}
+
+.content img{
+	width: 50px;
+
+}
+
+.content-description{
+	margin-top: -20px;
+	height: 100%; 
+	padding-left: 1em; 
 }
 
 
