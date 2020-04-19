@@ -13,7 +13,7 @@ export default {
   props: ['text', 'route'],
   methods: {
   reroute: function () {
-    this.$router.push({ name: 'Contribute'});   
+    this.$router.push({ name: this.route});   
     }
   }
 }

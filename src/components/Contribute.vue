@@ -1,16 +1,6 @@
 <template>
   
     <div class="contribute">
-        <!-- <h1> Contribute </h1> -->
-        <!-- <div id="form">
-            <p class="header"> Company name: </p>
-            <input />
-            <p class="header"> Salary / Hour: </p>
-            <p class="subheader"> If your position is unpaid, please write 0. </p>
-            <input />
-
-        </div> -->
-        
        <iframe class="airtable-embed" src="https://airtable.com/embed/shrOOQTlhmGmDJDmn?backgroundColor=teal" frameborder="0" onmousewheel="" width="100%" height="833" style="background: transparent; border: 0px solid #ccc;"></iframe> 
     </div>
     

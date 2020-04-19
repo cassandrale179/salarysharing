@@ -14,7 +14,7 @@ export default new Router({
       component: Main
     }, 
     {
-      path: '/Menu',
+      path: '/',
       name: 'Menu',
       component: Menu
     },
