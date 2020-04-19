@@ -7,11 +7,12 @@
 <script>
 export default {
   name: 'Button',
-  data () {
-    return {
-      text: 'Hello World'
-    }
-  }
+  props: ['text'],
+//   data () {
+//     return {
+//       text: ''
+//     }
+//   }
 }
 </script>
 

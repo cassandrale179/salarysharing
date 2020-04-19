@@ -1,7 +1,7 @@
 <template>
   
     <div class="menu">
-       <img class="icon" src="https://img.icons8.com/android/24/000000/menu.png"/> 
+       <!-- <img class="icon" src="https://img.icons8.com/android/24/000000/menu.png"/>  -->
     </div>
     
 
