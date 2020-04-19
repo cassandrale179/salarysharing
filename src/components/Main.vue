@@ -9,11 +9,11 @@
         class="airtable-embed" 
         src="https://airtable.com/embed/shrGrb3WKB2nUoCyt?backgroundColor=teal&viewControls=on" 
         frameborder="0" onmousewheel="" 
-        width="100%" height="100%" 
+        width="100%" height="90%" 
         style="background: transparent; border: 1px solid #ccc;">
       </iframe>
       <md-button 
-        text="Contribute" 
+        text="Add A Salary" 
         class="btn-position"
         route="Contribute">
       </md-button>

@@ -1,5 +1,11 @@
 <template>
-    <div class="menu">
+  <div class="horizontal-menu">
+    <!-- <div class="column"> Home </div>
+    <div class="column"> Contribute </div>
+    <div class="column"> Companies </div> -->
+    <!-- <div class="column"> </div> -->
+  </div>
+    <!-- <div class="menu">
        <img v-on:click="open()" class="icon" src="https://img.icons8.com/android/24/000000/menu.png"/> 
        <div class="menu-bar" v-if="clicked">
          <ul>
@@ -8,11 +14,11 @@
             <li> Companies </li>  
             <li> Privacy Policy </li>  
           </ul>
-          <!-- <span> 
+          <span> 
             <img class="icon-nav" src="https://img.icons8.com/material-outlined/24/000000/test.png"/> 
-            <p>Contribute </p></span> -->
+            <p>Contribute </p></span>
         </div>  
-    </div>
+    </div> -->
 </template>
 
 <script>
@@ -38,12 +44,33 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+.horizontal-menu{
+  top: 0; 
+  width: 50%;
+  padding-top: 2em;  
+  padding-bottom: 1em; 
+  margin: 0 auto;
+}
+
+.column{
+  display: inline-block; 
+  width: calc(100% / 5); 
+  font-size: 20px;
+  text-decoration: underline;
+  color: rgba(93, 109, 126 , 0.8); 
+  
+}
+
+
+
 .menu{
     position: fixed;
     top: 0; 
     right: 0; 
 
 }
+
 .icon{
     padding-top: 1em; 
     padding-right: 1em; 
@@ -56,8 +83,9 @@ li{
   text-align: left; 
   color: black; 
 }
+
 .menu-bar{
-  padding: 0.2em; 
+  padding: 0.2em;
   position: fixed;
   top: 10; 
   right: 0; 
