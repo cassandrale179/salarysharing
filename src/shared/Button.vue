@@ -1,18 +1,21 @@
 <template>
     <div>
-      <button class="pure-material-button-contained btn-position">{{text}}</button>
+      <button 
+        class="pure-material-button-contained btn-position" 
+        v-on:click="reroute()">{{text}}
+      </button>
     </div>
 </template>
 
 <script>
 export default {
   name: 'Button',
-  props: ['text'],
-//   data () {
-//     return {
-//       text: ''
-//     }
-//   }
+  props: ['text', 'route'],
+  methods: {
+  reroute: function () {
+    this.$router.push({ name: 'Contribute'});   
+    }
+  }
 }
 </script>
 

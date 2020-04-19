@@ -14,7 +14,8 @@
       </iframe>
       <md-button 
         text="Contribute" 
-        class="btn-position">
+        class="btn-position"
+        route="Contribute">
       </md-button>
    </div>
 </template>
@@ -23,12 +24,15 @@
 <script>
 import Button from "../shared/Button.vue";
 
+
 export default {
   name: "Main",
   components: {
     "md-button": Button,
   }
 };
+
+
 </script>
 
 
