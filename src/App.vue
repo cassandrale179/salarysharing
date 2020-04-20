@@ -1,7 +1,11 @@
 <template>
   <div id="app">
-    <app-menu-view />
-    <router-view/>
+    <div id="menu" class="card">
+      <app-menu-view />
+    </div>
+    <div id="main">
+      <router-view />
+    </div>
   </div>
 </template>
 
@@ -29,4 +33,28 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+
+#main{
+  margin-top: 80px;
+}
+
+#menu{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background: rgba(23, 32, 42, 1); 
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
 </style>

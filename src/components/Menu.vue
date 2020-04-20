@@ -1,24 +1,12 @@
 <template>
   <div class="horizontal-menu">
-    <!-- <div class="column"> Home </div>
-    <div class="column"> Contribute </div>
-    <div class="column"> Companies </div> -->
-    <!-- <div class="column"> </div> -->
+    <div class="navigaton">
+      <div class="navigation-link"> Contribute </div>
+      <div class="navigation-link"> Companies </div>
+      <div class="navigation-link"> Home </div>
+    </div>
   </div>
-    <!-- <div class="menu">
-       <img v-on:click="open()" class="icon" src="https://img.icons8.com/android/24/000000/menu.png"/> 
-       <div class="menu-bar" v-if="clicked">
-         <ul>
-            <li> Home </li> 
-            <li> Contribute </li> 
-            <li> Companies </li>  
-            <li> Privacy Policy </li>  
-          </ul>
-          <span> 
-            <img class="icon-nav" src="https://img.icons8.com/material-outlined/24/000000/test.png"/> 
-            <p>Contribute </p></span>
-        </div>  
-    </div> -->
+   
 </template>
 
 <script>
@@ -46,54 +34,26 @@ export default {
 <style scoped>
 
 .horizontal-menu{
-  top: 0; 
-  width: 50%;
-  padding-top: 2em;  
-  padding-bottom: 1em; 
-  margin: 0 auto;
+  height: 40px;
+  padding-top: 1em; 
+  padding-right: 2em; 
 }
 
-.column{
-  display: inline-block; 
-  width: calc(100% / 5); 
-  font-size: 20px;
-  text-decoration: underline;
-  color: rgba(93, 109, 126 , 0.8); 
-  
+.navigation-link{
+  display: inline-block;
+  color: white; 
+  float: right; 
+  margin-left: 2em; 
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7); 
 }
 
-
-
-.menu{
-    position: fixed;
-    top: 0; 
-    right: 0; 
-
-}
-
-.icon{
-    padding-top: 1em; 
-    padding-right: 1em; 
-    width: 20px; 
-}
-.icon-nav{
-    width: 20px; 
-}
-li{
-  text-align: left; 
-  color: black; 
-}
-
-.menu-bar{
-  padding: 0.2em;
-  position: fixed;
-  top: 10; 
-  right: 0; 
-  border: 1px rgba(0,0,0,0.2) solid; 
-  margin-right: 1em; 
-  width: 10em;
-  height: 10em; 
-  text-align: left;
+.navigation-link:hover{
+  color: rgba(255, 255, 255, 1); 
+  border-bottom: 3px rgba(255, 255, 255, 1) solid; 
+  height: 40px;
 }
 
 </style>
+
+

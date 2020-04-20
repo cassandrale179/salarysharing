@@ -55,6 +55,7 @@ a {
   padding-left: 10em; 
   padding-right: 10em; 
   height: 500px; 
+  margin-top: 8em;
 }
 
 .btn-position{

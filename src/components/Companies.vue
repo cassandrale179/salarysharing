@@ -72,14 +72,16 @@ export default {
 
 .left-navbar{
     border-right: 1px rgba(0,0,0,0.1) solid;
-    position: fixed;
     height: 100%;
     width: 20%; 
     top: 0px;
     left: 0px; 
     scroll-behavior: smooth;
-    overflow: auto;
-     
+		overflow: auto;
+		margin-top: 50px;
+		position: absolute; 
+		z-index: -5;
+		padding-top: 2em;
 }
 
 .companies h3{
@@ -98,13 +100,17 @@ export default {
 
 .company-name:hover{
     background: rgba(242, 243, 244, 0.5); 
-    color: rgba(0,0,0,0.7); 
+		color: rgba(0,0,0,0.7); 
+		border-right: 3px black solid; 
 }
 
 .company-view{
-    margin-left: 20%; 
-    padding-left: 5em; 
-    padding-right: 5em; 
+	position: absolute; 
+	top: 100px;
+	margin-left: 20%; 
+	padding-left: 5em; 
+	padding-right: 5em; 
+	z-index: -5;
 }
 
 .company-view h1, h4, p{
@@ -131,7 +137,6 @@ td{
 	border-top: 1px rgba(0,0,0,0.1) solid;
 }
 
-
 .content {
     width: 100%; 
     overflow: hidden;
@@ -155,23 +160,6 @@ td{
 	height: 100%; 
 	padding-left: 1em; 
 }
-
-
-
-/* .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-} 
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}  */
-
-
-
-
-
-
 
 
 </style>
