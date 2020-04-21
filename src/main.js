@@ -4,7 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+
 Vue.config.productionTip = false
+
+// var Airtable = require('airtable');
+// Airtable.configure({
+//     endpointUrl: 'https://api.airtable.com',
+//     apiKey: 'keyMe1oF4ZaD5ACJA'
+// });
 
 /* eslint-disable no-new */
 new Vue({
